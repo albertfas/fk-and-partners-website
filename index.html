@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>FK &amp; Partners — Conseil en investissement &amp; stratégie d'affaires</title>
+<meta name="description" content="FK & Partners, cabinet de conseil en investissement et en stratégie d'affaires basé à Douala (Cameroun). Neuf secteurs d'intervention : Real Estate, Banque & Finance, Télécoms & IT, Santé & Éducation, Agro Business." />
+<meta property="og:title" content="FK & Partners — Conseil en investissement" />
+<meta property="og:description" content="Cabinet de conseil en investissement et stratégie d'affaires — Douala, Cameroun." />
+<meta property="og:type" content="website" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B2447'/%3E%3Ctext x='32' y='43' font-family='Arial' font-size='26' font-weight='bold' fill='%23C9A227' text-anchor='middle'%3EFK%3C/text%3E%3C/svg%3E" />
+<style>
+:root{--navy:#0B2447;--navy2:#12386B;--gold:#C9A227;--gold2:#E3C34E;--ink:#1F2937;--muted:#5B6B7C;--bg:#F7F9FC;--line:#E5EAF1}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+.container{max-width:1120px;margin:0 auto;padding:0 24px}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.view{display:none}.view.active{display:block;animation:fade .3s ease}
+/* Header */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--navy);font-weight:800;font-size:1.08rem}
+.logo-mark{width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,var(--navy),var(--navy2));color:var(--gold2);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+.logo-text small{display:block;font-size:.68rem;color:var(--muted);font-weight:600;letter-spacing:.04em}
+.logo-text em{font-style:normal;color:var(--gold)}
+nav{display:flex;align-items:center;gap:26px}
+nav a{color:var(--muted);text-decoration:none;font-weight:600;font-size:.94rem}
+nav a:hover{color:var(--navy)}
+.nav-active{color:var(--navy);border-bottom:2px solid var(--gold);padding-bottom:2px}
+.nav-cta{background:var(--navy);color:#fff !important;padding:9px 18px;border-radius:9px}
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:6px}
+.burger span{width:24px;height:2px;background:var(--navy)}
+/* Hero */
+.hero{background:radial-gradient(1200px 600px at 80% -10%, rgba(201,162,39,.22), transparent 60%), linear-gradient(135deg,#0B2447 0%,#12386B 60%,#0E2C55 100%);color:#fff;padding:96px 0 80px}
+.eyebrow{display:inline-block;border:1px solid rgba(227,195,78,.5);color:var(--gold2);padding:6px 14px;border-radius:999px;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700}
+h1{font-size:clamp(2rem,4.6vw,3.3rem);line-height:1.15;margin:22px 0 18px;font-weight:800;max-width:820px}
+.gold{color:var(--gold2)}
+.hero p{max-width:640px;color:rgba(255,255,255,.85);font-size:1.08rem}
+.hero-cta{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:10px;font-weight:700;text-decoration:none;font-size:.95rem;transition:.2s;cursor:pointer;border:0}
+.btn-gold{background:var(--gold);color:#141414}
+.btn-gold:hover{filter:brightness(1.08)}
+.btn-ghost{border:1.5px solid rgba(255,255,255,.5);color:#fff;background:transparent}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--navy2)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:52px}
+.stat{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:18px 20px}
+.stat b{display:block;font-size:1.5rem;color:var(--gold2)}
+.stat span{font-size:.86rem;color:rgba(255,255,255,.8)}
+/* Sections */
+.section{padding:76px 0}
+.sec-head{max-width:680px;margin:0 auto 42px;text-align:center}
+.kicker{display:inline-block;color:var(--gold);text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;font-weight:800;margin-bottom:10px}
+.sec-head h2{color:var(--navy);font-size:clamp(1.6rem,3vw,2.2rem);margin-bottom:10px}
+.sec-head p{color:var(--muted)}
+.grid9{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px 22px;transition:.2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(11,36,71,.1);border-color:rgba(201,162,39,.45)}
+.icon{width:46px;height:46px;border-radius:12px;background:linear-gradient(135deg,rgba(201,162,39,.16),rgba(201,162,39,.3));color:var(--navy);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.icon svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.card h3,.ccard h3{color:var(--navy);font-size:1.05rem;margin-bottom:8px}
+.card p,.ccard p{color:var(--muted);font-size:.92rem}
+.cta-band{background:linear-gradient(135deg,var(--navy),var(--navy2));border-radius:18px;padding:44px 40px;color:#fff;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.cta-band p{color:rgba(255,255,255,.8)}
+/* À propos */
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:start}
+.about-text h3{color:var(--navy);font-size:1.15rem;margin:22px 0 8px}
+.about-text h3:first-child{margin-top:0}
+.about-text p{color:var(--muted)}
+.values{display:grid;gap:14px}
+.value{display:grid;gap:6px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+.value b{color:var(--navy)}
+.value p{color:var(--muted);font-size:.92rem}
+/* Carrière */
+.steps{list-style:none;display:grid;gap:16px;max-width:760px;margin:0 auto}
+.step{display:flex;gap:18px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 22px;align-items:flex-start}
+.num{flex:none;width:40px;height:40px;border-radius:50%;background:var(--navy);color:var(--gold2);display:flex;align-items:center;justify-content:center;font-weight:800}
+.step h4{color:var(--navy);margin-bottom:4px}
+.step p{color:var(--muted);font-size:.94rem}
+.career-cta{text-align:center;margin-top:36px}
+.career-cta p{color:var(--muted);font-size:.9rem;margin-top:12px}
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.ccard{display:block;background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px;text-align:center;text-decoration:none;transition:.2s}
+a.ccard:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(11,36,71,.1)}
+.ccard .icon{margin-left:auto;margin-right:auto}
+.legal-note{margin-top:30px;text-align:center;color:var(--muted);font-size:.88rem}
+/* Footer */
+footer{background:var(--navy);color:rgba(255,255,255,.75);padding:48px 0 24px;margin-top:20px}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px}
+.logo-f{color:#fff;font-weight:800;font-size:1.1rem;margin-bottom:10px}
+.logo-f em{font-style:normal;color:var(--gold2)}
+footer p{font-size:.92rem}
+footer h4{color:#fff;font-size:.88rem;margin-bottom:12px;letter-spacing:.08em;text-transform:uppercase}
+footer ul{list-style:none;display:grid;gap:8px}
+footer a{color:rgba(255,255,255,.75);text-decoration:none}
+footer a:hover{color:var(--gold2)}
+.f-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:36px;padding-top:18px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.85rem}
+@media (max-width:900px){
+ nav{display:none;position:absolute;top:72px;left:0;right:0;background:#fff;flex-direction:column;align-items:flex-start;gap:14px;padding:18px 24px 22px;border-bottom:1px solid var(--line);box-shadow:0 12px 24px rgba(11,36,71,.08)}
+ nav.open{display:flex}
+ .burger{display:flex}
+ .stats{grid-template-columns:repeat(2,1fr)}
+ .about-grid{grid-template-columns:1fr}
+ .f-grid{grid-template-columns:1fr}
+ .cta-band{padding:32px 26px}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="container header-inner">
+    <a href="#" class="logo" data-view="home">
+      <span class="logo-mark">FK</span>
+      <span class="logo-text">FK <em>&amp;</em> Partners<small>Cabinet de conseil en investissement</small></span>
+    </a>
+    <button id="burger" class="burger" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+    <nav id="navMenu">
+      <a href="#" class="nav-link nav-active" data-view="home">Accueil</a>
+      <a href="#" class="nav-link" data-view="about">À propos</a>
+      <a href="#" data-view="home" data-anchor="#sectors">Secteurs</a>
+      <a href="#" class="nav-link" data-view="career">Carrière</a>
+      <a href="#" class="nav-cta" data-view="contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- ================= ACCUEIL ================= -->
+<section class="view active" data-view="home">
+  <div class="hero" id="top">
+    <div class="container">
+      <span class="eyebrow">Cabinet de conseil · Douala, Cameroun</span>
+      <h1>Structurer, financer et sécuriser <span class="gold">vos investissements</span> en Afrique</h1>
+      <p>FK &amp; Partners accompagne investisseurs, institutions et entreprises dans la conception et l'exécution de leurs projets d'investissement — de la stratégie à la mise en œuvre.</p>
+      <div class="hero-cta">
+        <a class="btn btn-gold" href="#" data-view="home" data-anchor="#sectors">Découvrir nos secteurs</a>
+        <a class="btn btn-ghost" href="#" data-view="contact">Nous contacter</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>9</b><span>secteurs d'intervention</span></div>
+        <div class="stat"><b>2</b><span>associés fondateurs, spécialistes de l'investissement</span></div>
+        <div class="stat"><b>2021</b><span>année de création du cabinet</span></div>
+        <div class="stat"><b>Douala</b><span>cœur du dispositif, portée internationale</span></div>
+      </div>
+    </div>
+  </div>
+  <section class="section" id="sectors">
+    <div class="container">
+      <div class="sec-head">
+        <span class="kicker">Secteurs</span>
+        <h2>Nos secteurs d'intervention</h2>
+        <p>Une expertise transversale au service de projets ambitieux en Afrique.</p>
+      </div>
+      <div class="grid9">
+        <article class="card"><div class="icon"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M9 7h1.2M13.8 7H15M9 11h1.2M13.8 11H15M9 15h1.2M13.8 15H15M10.5 21v-3h3v3"/></svg></div><h3>Real Estate</h3><p>Conseil en investissement et développement d'actifs immobiliers stratégiques.</p></article>
+        <article class="card"><div class="icon"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21v-9M9.5 21v-9M14.5 21v-9M19 21v-9M3 9.5L12 3l9 6.5"/></svg></div><h3>Public Sectors</h3><p>Appui aux institutions et aux projets structurants public-privé.</p></article>
+        <article class="card"><div class="icon"><svg viewBox="0 0 24 24"><path d="M3 21V10l5.5 3.5V10l5.5 3.5V6H20v15H3z"/><path d="M7 17h3M13 17h3"/></svg></div><h3>Industries</h3><p>Optimisation industrielle, chaîne de valeur et investissements capitalistiques.</p></article>
+        <article class="card"><div class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="7.5" width="18" height="12.5" rx="2"/><path d="M8.5 7.5V6a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v1.5M3 12.5h18"/></svg></div><h3>Bank and Finance</h3><p>Stratégie bancaire, ingénierie financière et intermédiation.</p></article>
+        <article class="card"><div class="icon"><svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/><rect x="10" y="10" width="4" height="4"/><path d="M9 3v3M15 3v3M9 18v3M15 18v3M3 9h3M3 15h3M18 9h3M18 15h3"/></svg></div><h3>Telecoms and IT</h3><p>Transformation numérique, infrastructures télécoms et solutions technologiques.</p></article>
+        <article class="card"><div class="icon"><svg viewBox="0 0 24 24"><path d="M2 6h11.5v10H2zM13.5 10H18l3 3.5V16h-7.5"/><circle cx="6.5" cy="18.5" r="1.8"/><circle cx="17" cy="18.5" r="1.8"/></svg></div><h3>Transport and Logistics</h3><p>Gestion des flux, supply chain et plateformes multimodales.</p></article>
+        <article class="card"><div class="icon"><svg viewBox="0 0 24 24"><path d="M2.5 9.5L12 5l9.5 4.5L12 14 2.5 9.5z"/><path d="M6.5 11.5v4.2c0 1.4 2.5 2.8 5.5 2.8s5.5-1.4 5.5-2.8v-4.2M21 11v4"/></svg></div><h3>Health and Education</h3><p>Projets à fort impact sociétal dans la santé et la formation.</p></article>
+        <article class="card"><div class="icon"><svg viewBox="0 0 24 24"><circle cx="9.5" cy="19.5" r="1.6"/><circle cx="17" cy="19.5" r="1.6"/><path d="M2.5 3.5h2.4l2.6 11.5h9.6l2.4-8.5H6"/></svg></div><h3>Retail</h3><p>Distribution moderne et développement de réseaux commerciaux.</p></article>
+        <article class="card"><div class="icon"><svg viewBox="0 0 24 24"><path d="M12 21v-7.5"/><path d="M12 13.5C12 9 8.5 5.5 3.5 5.5c0 5 3.5 8 8.5 8z"/><path d="M12 10.5c0-4 3-6.5 8-6.5 0 4.5-3 7.5-8 6.5z"/></svg></div><h3>Agro Business</h3><p>Valorisation des filières agro-industrielles et sécurisation des approvisionnements.</p></article>
+      </div>
+    </div>
+  </section>
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="cta-band">
+        <div><h3 style="color:#fff;font-size:1.3rem">Un projet d'investissement en tête ?</h3><p>Parlons-en — le cabinet vous répond directement.</p></div>
+        <a class="btn btn-gold" href="#" data-view="contact">Nous contacter</a>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ================= À PROPOS ================= -->
+<section class="view" data-view="about">
+  <section class="section"><div class="container">
+    <div class="sec-head"><span class="kicker">À propos</span><h2>Le cabinet</h2><p>Un cabinet d'origine africaine, ancré à Douala et tourné vers le monde.</p></div>
+    <div class="about-grid">
+      <div class="about-text">
+        <h3>Qui sommes-nous ?</h3>
+        <p>FK &amp; Partners est un cabinet de conseil en investissement et en stratégie d'affaires fondé par deux spécialistes africains de l'investissement. Il accompagne investisseurs privés, institutions publiques et entreprises dans la structuration, le financement et la conduite de leurs projets.</p>
+        <h3>Notre approche</h3>
+        <p>Nous combinons une connaissance fine des réalités des marchés africains avec une exigence de standard international : analyse rigoureuse, recommandations opérationnelles et accompagnement de proximité, du diagnostic initial jusqu'à l'exécution.</p>
+        <h3>Nos garanties</h3>
+        <p>Cabinet enregistré au registre du commerce de Douala — RCCM : RC/DLA/2021/B/4091 · NIU : M082116419633J.</p>
+      </div>
+      <div class="values">
+        <div class="value"><b>Intégrité</b><p>Des dossiers rigoureux, transparents et documentés.</p></div>
+        <div class="value"><b>Excellence</b><p>Des analyses et des livrables au standard international.</p></div>
+        <div class="value"><b>Proximité</b><p>Un accompagnement de bout en bout, humain et réactif.</p></div>
+        <div class="value"><b>Impact</b><p>Des projets qui créent une valeur durable.</p></div>
+      </div>
+    </div>
+  </div></section>
+</section>
+
+<!-- ================= CARRIÈRE ================= -->
+<section class="view" data-view="career">
+  <section class="section"><div class="container">
+    <div class="sec-head"><span class="kicker">Carrière</span><h2>Rejoindre FK &amp; Partners</h2><p>Nous accueillons des profils exigeants, curieux et orientés résultats. Notre processus est simple et transparent.</p></div>
+    <ol class="steps">
+      <li class="step"><span class="num">1</span><div><h4>Candidature</h4><p>Envoyez votre CV et votre lettre de motivation à contact@fkandpartners.com.</p></div></li>
+      <li class="step"><span class="num">2</span><div><h4>Pré-sélection</h4><p>Étude attentive de chaque dossier par l'équipe du cabinet.</p></div></li>
+      <li class="step"><span class="num">3</span><div><h4>Entretien</h4><p>Échange technique et RH, sur site à Douala ou en visioconférence.</p></div></li>
+      <li class="step"><span class="num">4</span><div><h4>Offre &amp; intégration</h4><p>Formalisation de l'offre, accueil et accompagnement de vos premiers mois.</p></div></li>
+    </ol>
+    <div class="career-cta">
+      <a class="btn btn-navy" href="mailto:contact@fkandpartners.com?subject=Candidature%20-%20FK%20%26%20Partners">Envoyer une candidature</a>
+      <p>Par e-mail : contact@fkandpartners.com</p>
+    </div>
+  </div></section>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="view" data-view="contact">
+  <section class="section"><div class="container">
+    <div class="sec-head"><span class="kicker">Contact</span><h2>Parlons de votre projet</h2><p>Le cabinet est joignable directement par téléphone ou par e-mail.</p></div>
+    <div class="contact-grid">
+      <a class="ccard" href="tel:+237233426634"><div class="icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><h3>Téléphone</h3><p>+237 233 42 66 34</p></a>
+      <a class="ccard" href="mailto:contact@fkandpartners.com"><div class="icon"><svg viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="M3 6.5l9 6.5 9-6.5"/></svg></div><h3>E-mail</h3><p>contact@fkandpartners.com</p></a>
+      <div class="ccard"><div class="icon"><svg viewBox="0 0 24 24"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div><h3>Adresse</h3><p>Douala, Cameroun</p></div>
+    </div>
+    <p class="legal-note">FK &amp; Partners — RCCM : RC/DLA/2021/B/4091 · NIU : M082116419633J · Douala, Cameroun</p>
+  </div></section>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="f-grid">
+      <div>
+        <div class="logo-f">FK <em>&amp;</em> Partners</div>
+        <p>Cabinet de conseil en investissement et en stratégie d'affaires, fondé à Douala par deux spécialistes africains de l'investissement.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#" data-view="home">Accueil</a></li>
+          <li><a href="#" data-view="about">À propos</a></li>
+          <li><a href="#" data-view="home" data-anchor="#sectors">Secteurs</a></li>
+          <li><a href="#" data-view="career">Carrière</a></li>
+          <li><a href="#" data-view="contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+237233426634">+237 233 42 66 34</a></li>
+          <li><a href="mailto:contact@fkandpartners.com">contact@fkandpartners.com</a></li>
+          <li>Douala, Cameroun</li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>© <span id="year">2026</span> FK &amp; Partners. Tous droits réservés.</span>
+      <span>RCCM : RC/DLA/2021/B/4091 · NIU : M082116419633J</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+var views = document.querySelectorAll('.view');
+var viewLinks = document.querySelectorAll('a[data-view]');
+var menu = document.getElementById('navMenu');
+var burger = document.getElementById('burger');
+
+function showView(id) {
+  for (var i = 0; i < views.length; i++) {
+    views[i].classList.toggle('active', views[i].getAttribute('data-view') === id);
+  }
+  for (var j = 0; j < viewLinks.length; j++) {
+    if (viewLinks[j].classList.contains('nav-link')) {
+      viewLinks[j].classList.toggle('nav-active', viewLinks[j].getAttribute('data-view') === id);
+    }
+  }
+  window.scrollTo(0, 0);
+  menu.classList.remove('open');
+}
+
+for (const l of viewLinks) {
+  l.addEventListener('click', function (e) {
+    e.preventDefault();
+    if (l.hasAttribute('data-anchor')) {
+      showView('home');
+      var target = document.querySelector(l.getAttribute('data-anchor'));
+      if (target) { setTimeout(function () { target.scrollIntoView({ behavior: 'smooth' }); }, 60); }
+    } else {
+      showView(l.getAttribute('data-view'));
+    }
+  });
+}
+
+burger.addEventListener('click', function () { menu.classList.toggle('open'); });
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
